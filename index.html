@@ -32,19 +32,21 @@
       font-size: 1.2rem;
       max-width: 600px;
     }
-    .hero button {
+    .hero button, .buy-button {
       margin-top: 25px;
-      padding: 12px 30px;
-      background: #ffcc00;
-      color: #1e2a38;
+      padding: 18px 40px;
+      background: #ff0000;
+      color: white;
       border: none;
-      border-radius: 6px;
-      font-size: 1rem;
+      border-radius: 8px;
+      font-size: 1.5rem;
       cursor: pointer;
-      transition: background 0.3s;
+      font-weight: bold;
+      transition: background 0.3s, transform 0.2s;
     }
-    .hero button:hover {
-      background: #ffd633;
+    .hero button:hover, .buy-button:hover {
+      background: #cc0000;
+      transform: scale(1.05);
     }
     section {
       padding: 80px 10%;
@@ -75,6 +77,21 @@
       line-height: 1.6;
       text-align: center;
     }
+    .buy-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 100px 0;
+      background: #1e2a38;
+    }
+    .buy-section .buy-button {
+      background: #ffcc00;
+      color: #1e2a38;
+    }
+    .buy-section .buy-button:hover {
+      background: #ffd633;
+      transform: scale(1.08);
+    }
     footer {
       background: #1e2a38;
       color: white;
@@ -89,7 +106,9 @@
     <div class="hero" id="home">
       <h1>Build Your Wealth with Confidence</h1>
       <p>Expert investment insights to help you grow and protect your capital.</p>
-      <button onclick="scrollToSection('services')">Get Started</button>
+        <section id="buy">
+        <a href="https://buy.stripe.com/cNi8wQ8SJchMeL6gDAdby00" class="buy-button">💰 BUY SERVICE NOW 💰</a>
+      </section>
     </div>
   </header>
 
@@ -110,6 +129,8 @@
       </div>
     </div>
   </section>
+
+
 
   <section id="about" class="about">
     <h2>About Us</h2>
