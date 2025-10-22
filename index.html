@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Builders | Smart Investment Strategies</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f9fafc;
+      color: #222;
+    }
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1561414927-6d86591d0c4f?auto=format&fit=crop&w=1350&q=80');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+    }
+    .hero button {
+      margin-top: 25px;
+      padding: 12px 30px;
+      background: #ffcc00;
+      color: #1e2a38;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .hero button:hover {
+      background: #ffd633;
+    }
+    section {
+      padding: 80px 10%;
+    }
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 50px;
+    }
+    .service-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+    }
+    .about p {
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.6;
+      text-align: center;
+    }
+    footer {
+      background: #1e2a38;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="hero" id="home">
+      <h1>Build Your Wealth with Confidence</h1>
+      <p>Expert investment insights to help you grow and protect your capital.</p>
+      <button onclick="scrollToSection('services')">Get Started</button>
+    </div>
+  </header>
+
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-cards">
+      <div class="card">
+        <h3>Portfolio Strategy</h3>
+        <p>Customized asset allocation based on your goals, risk tolerance, and time horizon.</p>
+      </div>
+      <div class="card">
+        <h3>Market Insights</h3>
+        <p>Weekly updates on stocks, ETFs, and macroeconomic trends from our analysts.</p>
+      </div>
+      <div class="card">
+        <h3>Retirement Planning</h3>
+        <p>Guidance to ensure a sustainable and secure retirement income strategy.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>Portfolio Builders is a financial advisory company dedicated to helping individuals and families make informed investment decisions. Our team of experts blends fundamental and technical analysis to craft personalized strategies that outperform the market while minimizing risk.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Portfolio Builders. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
